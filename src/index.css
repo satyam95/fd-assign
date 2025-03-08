@@ -1,1 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+.cmp-shadow {
+  box-shadow: 0px 20px 64.4px 0px #00000075;
+  box-shadow: 389px 0px 0px 1.5px #26262673;
+  box-shadow: 0px 4px 21.4px 0px #00000069;
+}
+
+.cmp-blur {
+  background: linear-gradient(
+    91.45deg,
+    rgba(1, 1, 1, 0.5) 21.9%,
+    rgba(1, 1, 1, 0) 93.49%
+  );
+  backdrop-filter: blur(4.652547836303711px);
+  backdrop-filter: blur(1.2243547439575195px);
+}

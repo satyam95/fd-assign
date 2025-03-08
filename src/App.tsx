@@ -1,8 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import ChatPage from "./pages/ChatPage";
+import TimerPage from "./pages/TimerPage";
+import ButtonsPage from "./pages/ButtonsPage";
+
 function App() {
   return (
-    <div className="container mx-auto">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ChatPage />} />
+        <Route path="/button" element={<ButtonsPage />} />
+        <Route path="/timer" element={<TimerPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
